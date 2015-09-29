@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68816A7C1BBB3591000569CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A7B1BBB3591000569CE /* AppDelegate.swift */; };
+		68816A7E1BBB3591000569CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A7D1BBB3591000569CE /* ViewController.swift */; };
+		68816A811BBB3591000569CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816A7F1BBB3591000569CE /* Main.storyboard */; };
+		68816A831BBB3591000569CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68816A821BBB3591000569CE /* Assets.xcassets */; };
+		68816A861BBB3591000569CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816A841BBB3591000569CE /* LaunchScreen.storyboard */; };
+		68816A911BBB3591000569CE /* SolarSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A901BBB3591000569CE /* SolarSystemTests.swift */; };
+		68816A9C1BBB3591000569CE /* SolarSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A9B1BBB3591000569CE /* SolarSystemUITests.swift */; };
+		68816AAB1BBB35E8000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; settings = {ASSET_TAGS = (); }; };
+		68816AAC1BBB35E8000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; settings = {ASSET_TAGS = (); }; };
+		68816AAD1BBB35EC000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; settings = {ASSET_TAGS = (); }; };
+		68816AAE1BBB35EC000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68816A8D1BBB3591000569CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68816A701BBB3591000569CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68816A771BBB3591000569CE;
+			remoteInfo = SolarSystem;
+		};
+		68816A981BBB3591000569CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68816A701BBB3591000569CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68816A771BBB3591000569CE;
+			remoteInfo = SolarSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68816A781BBB3591000569CE /* SolarSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68816A7B1BBB3591000569CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68816A7D1BBB3591000569CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68816A801BBB3591000569CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68816A821BBB3591000569CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68816A851BBB3591000569CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68816A871BBB3591000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68816A8C1BBB3591000569CE /* SolarSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68816A901BBB3591000569CE /* SolarSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTests.swift; sourceTree = "<group>"; };
+		68816A921BBB3591000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68816A971BBB3591000569CE /* SolarSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68816A9B1BBB3591000569CE /* SolarSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemUITests.swift; sourceTree = "<group>"; };
+		68816A9D1BBB3591000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68816AA91BBB35E8000569CE /* PlanetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		68816AAA1BBB35E8000569CE /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68816A751BBB3591000569CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68816A891BBB3591000569CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68816A941BBB3591000569CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68816A6F1BBB3591000569CE = {
+			isa = PBXGroup;
+			children = (
+				68816A7A1BBB3591000569CE /* SolarSystem */,
+				68816A8F1BBB3591000569CE /* SolarSystemTests */,
+				68816A9A1BBB3591000569CE /* SolarSystemUITests */,
+				68816A791BBB3591000569CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68816A791BBB3591000569CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68816A781BBB3591000569CE /* SolarSystem.app */,
+				68816A8C1BBB3591000569CE /* SolarSystemTests.xctest */,
+				68816A971BBB3591000569CE /* SolarSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68816A7A1BBB3591000569CE /* SolarSystem */ = {
+			isa = PBXGroup;
+			children = (
+				68816A7B1BBB3591000569CE /* AppDelegate.swift */,
+				68816A7D1BBB3591000569CE /* ViewController.swift */,
+				68816A7F1BBB3591000569CE /* Main.storyboard */,
+				68816AA91BBB35E8000569CE /* PlanetController.swift */,
+				68816AAA1BBB35E8000569CE /* Planet.swift */,
+				68816A821BBB3591000569CE /* Assets.xcassets */,
+				68816A841BBB3591000569CE /* LaunchScreen.storyboard */,
+				68816A871BBB3591000569CE /* Info.plist */,
+			);
+			path = SolarSystem;
+			sourceTree = "<group>";
+		};
+		68816A8F1BBB3591000569CE /* SolarSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				68816A901BBB3591000569CE /* SolarSystemTests.swift */,
+				68816A921BBB3591000569CE /* Info.plist */,
+			);
+			path = SolarSystemTests;
+			sourceTree = "<group>";
+		};
+		68816A9A1BBB3591000569CE /* SolarSystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68816A9B1BBB3591000569CE /* SolarSystemUITests.swift */,
+				68816A9D1BBB3591000569CE /* Info.plist */,
+			);
+			path = SolarSystemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68816A771BBB3591000569CE /* SolarSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68816AA01BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystem" */;
+			buildPhases = (
+				68816A741BBB3591000569CE /* Sources */,
+				68816A751BBB3591000569CE /* Frameworks */,
+				68816A761BBB3591000569CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SolarSystem;
+			productName = SolarSystem;
+			productReference = 68816A781BBB3591000569CE /* SolarSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68816A8B1BBB3591000569CE /* SolarSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68816AA31BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemTests" */;
+			buildPhases = (
+				68816A881BBB3591000569CE /* Sources */,
+				68816A891BBB3591000569CE /* Frameworks */,
+				68816A8A1BBB3591000569CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68816A8E1BBB3591000569CE /* PBXTargetDependency */,
+			);
+			name = SolarSystemTests;
+			productName = SolarSystemTests;
+			productReference = 68816A8C1BBB3591000569CE /* SolarSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68816A961BBB3591000569CE /* SolarSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68816AA61BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemUITests" */;
+			buildPhases = (
+				68816A931BBB3591000569CE /* Sources */,
+				68816A941BBB3591000569CE /* Frameworks */,
+				68816A951BBB3591000569CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68816A991BBB3591000569CE /* PBXTargetDependency */,
+			);
+			name = SolarSystemUITests;
+			productName = SolarSystemUITests;
+			productReference = 68816A971BBB3591000569CE /* SolarSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68816A701BBB3591000569CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = DevMountain;
+				TargetAttributes = {
+					68816A771BBB3591000569CE = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					68816A8B1BBB3591000569CE = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 68816A771BBB3591000569CE;
+					};
+					68816A961BBB3591000569CE = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 68816A771BBB3591000569CE;
+					};
+				};
+			};
+			buildConfigurationList = 68816A731BBB3591000569CE /* Build configuration list for PBXProject "SolarSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68816A6F1BBB3591000569CE;
+			productRefGroup = 68816A791BBB3591000569CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68816A771BBB3591000569CE /* SolarSystem */,
+				68816A8B1BBB3591000569CE /* SolarSystemTests */,
+				68816A961BBB3591000569CE /* SolarSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68816A761BBB3591000569CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68816A861BBB3591000569CE /* LaunchScreen.storyboard in Resources */,
+				68816A831BBB3591000569CE /* Assets.xcassets in Resources */,
+				68816A811BBB3591000569CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68816A8A1BBB3591000569CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68816A951BBB3591000569CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68816A741BBB3591000569CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68816AAB1BBB35E8000569CE /* PlanetController.swift in Sources */,
+				68816A7E1BBB3591000569CE /* ViewController.swift in Sources */,
+				68816A7C1BBB3591000569CE /* AppDelegate.swift in Sources */,
+				68816AAC1BBB35E8000569CE /* Planet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68816A881BBB3591000569CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68816A911BBB3591000569CE /* SolarSystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68816A931BBB3591000569CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68816AAE1BBB35EC000569CE /* Planet.swift in Sources */,
+				68816A9C1BBB3591000569CE /* SolarSystemUITests.swift in Sources */,
+				68816AAD1BBB35EC000569CE /* PlanetController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68816A8E1BBB3591000569CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68816A771BBB3591000569CE /* SolarSystem */;
+			targetProxy = 68816A8D1BBB3591000569CE /* PBXContainerItemProxy */;
+		};
+		68816A991BBB3591000569CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68816A771BBB3591000569CE /* SolarSystem */;
+			targetProxy = 68816A981BBB3591000569CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68816A7F1BBB3591000569CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68816A801BBB3591000569CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68816A841BBB3591000569CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68816A851BBB3591000569CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68816A9E1BBB3591000569CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68816A9F1BBB3591000569CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68816AA11BBB3591000569CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SolarSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		68816AA21BBB3591000569CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SolarSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		68816AA41BBB3591000569CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SolarSystemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarSystem.app/SolarSystem";
+			};
+			name = Debug;
+		};
+		68816AA51BBB3591000569CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SolarSystemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarSystem.app/SolarSystem";
+			};
+			name = Release;
+		};
+		68816AA71BBB3591000569CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SolarSystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SolarSystem;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		68816AA81BBB3591000569CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SolarSystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SolarSystem;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68816A731BBB3591000569CE /* Build configuration list for PBXProject "SolarSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68816A9E1BBB3591000569CE /* Debug */,
+				68816A9F1BBB3591000569CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68816AA01BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68816AA11BBB3591000569CE /* Debug */,
+				68816AA21BBB3591000569CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68816AA31BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68816AA41BBB3591000569CE /* Debug */,
+				68816AA51BBB3591000569CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68816AA61BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68816AA71BBB3591000569CE /* Debug */,
+				68816AA81BBB3591000569CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68816A701BBB3591000569CE /* Project object */;
+}
