@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		68816A7C1BBB3591000569CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A7B1BBB3591000569CE /* AppDelegate.swift */; };
-		68816A7E1BBB3591000569CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A7D1BBB3591000569CE /* ViewController.swift */; };
-		68816A811BBB3591000569CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816A7F1BBB3591000569CE /* Main.storyboard */; };
 		68816A831BBB3591000569CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68816A821BBB3591000569CE /* Assets.xcassets */; };
 		68816A861BBB3591000569CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816A841BBB3591000569CE /* LaunchScreen.storyboard */; };
 		68816A911BBB3591000569CE /* SolarSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A901BBB3591000569CE /* SolarSystemTests.swift */; };
@@ -18,6 +16,9 @@
 		68816AAC1BBB35E8000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; settings = {ASSET_TAGS = (); }; };
 		68816AAD1BBB35EC000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; settings = {ASSET_TAGS = (); }; };
 		68816AAE1BBB35EC000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; settings = {ASSET_TAGS = (); }; };
+		68816AB81BBB383D000569CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816AB51BBB383D000569CE /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		68816AB91BBB383D000569CE /* PlanetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AB61BBB383D000569CE /* PlanetListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		68816ABA1BBB383D000569CE /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AB71BBB383D000569CE /* PlanetDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,6 @@
 /* Begin PBXFileReference section */
 		68816A781BBB3591000569CE /* SolarSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68816A7B1BBB3591000569CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68816A7D1BBB3591000569CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		68816A801BBB3591000569CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68816A821BBB3591000569CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68816A851BBB3591000569CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68816A871BBB3591000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +52,9 @@
 		68816A9D1BBB3591000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68816AA91BBB35E8000569CE /* PlanetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
 		68816AAA1BBB35E8000569CE /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		68816AB51BBB383D000569CE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		68816AB61BBB383D000569CE /* PlanetListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetListViewController.swift; sourceTree = "<group>"; };
+		68816AB71BBB383D000569CE /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				68816A7B1BBB3591000569CE /* AppDelegate.swift */,
-				68816A7D1BBB3591000569CE /* ViewController.swift */,
-				68816A7F1BBB3591000569CE /* Main.storyboard */,
+				68816AB51BBB383D000569CE /* Main.storyboard */,
+				68816AB61BBB383D000569CE /* PlanetListViewController.swift */,
+				68816AB71BBB383D000569CE /* PlanetDetailViewController.swift */,
 				68816AA91BBB35E8000569CE /* PlanetController.swift */,
 				68816AAA1BBB35E8000569CE /* Planet.swift */,
 				68816A821BBB3591000569CE /* Assets.xcassets */,
@@ -236,9 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68816AB81BBB383D000569CE /* Main.storyboard in Resources */,
 				68816A861BBB3591000569CE /* LaunchScreen.storyboard in Resources */,
 				68816A831BBB3591000569CE /* Assets.xcassets in Resources */,
-				68816A811BBB3591000569CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68816AB91BBB383D000569CE /* PlanetListViewController.swift in Sources */,
 				68816AAB1BBB35E8000569CE /* PlanetController.swift in Sources */,
-				68816A7E1BBB3591000569CE /* ViewController.swift in Sources */,
 				68816A7C1BBB3591000569CE /* AppDelegate.swift in Sources */,
+				68816ABA1BBB383D000569CE /* PlanetDetailViewController.swift in Sources */,
 				68816AAC1BBB35E8000569CE /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,14 +308,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		68816A7F1BBB3591000569CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68816A801BBB3591000569CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		68816A841BBB3591000569CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -495,6 +491,7 @@
 				68816AA21BBB3591000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68816AA31BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +500,7 @@
 				68816AA51BBB3591000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68816AA61BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +509,7 @@
 				68816AA81BBB3591000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
