@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iOu-gm-3zk">
-                                <rect key="frame" x="171" y="72" width="258" height="181"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="258" id="aYq-Av-dbe"/>
-                                    <constraint firstAttribute="height" constant="181" id="hSJ-cg-h6s"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Length of Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWK-tb-bZk">
                                 <rect key="frame" x="469" y="456" width="111" height="36"/>
                                 <constraints>
@@ -59,17 +52,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Diameter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oud-eb-3Gl">
-                                <rect key="frame" x="20" y="456" width="111" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="4KP-Tf-FNJ"/>
-                                    <constraint firstAttribute="width" constant="111" id="G7u-PU-ykR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghb-Ut-CVV">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghb-Ut-CVV">
                                 <rect key="frame" x="20" y="544" width="111" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -81,6 +64,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Diameter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oud-eb-3Gl">
+                                <rect key="frame" x="20" y="456" width="111" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="4KP-Tf-FNJ"/>
+                                    <constraint firstAttribute="width" constant="111" id="G7u-PU-ykR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="iOu-gm-3zk">
+                                <rect key="frame" x="104" y="64" width="393" height="368"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="aYq-Av-dbe"/>
+                                    <constraint firstAttribute="height" constant="368" id="hSJ-cg-h6s"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -101,7 +101,7 @@
                             <constraint firstItem="gsJ-4f-5nG" firstAttribute="baseline" secondItem="Ghb-Ut-CVV" secondAttribute="baseline" id="fnp-43-HOV"/>
                             <constraint firstItem="hWK-tb-bZk" firstAttribute="leading" secondItem="MLP-zX-pbR" secondAttribute="trailing" constant="31" id="hTp-ca-GIC"/>
                             <constraint firstItem="gsJ-4f-5nG" firstAttribute="trailing" secondItem="MLP-zX-pbR" secondAttribute="trailing" id="jyQ-hf-qQH"/>
-                            <constraint firstItem="iOu-gm-3zk" firstAttribute="top" secondItem="mnc-S8-WbC" secondAttribute="bottom" constant="8" symbolic="YES" id="k81-bz-v79"/>
+                            <constraint firstItem="iOu-gm-3zk" firstAttribute="top" secondItem="mnc-S8-WbC" secondAttribute="bottom" id="k81-bz-v79"/>
                             <constraint firstItem="MLP-zX-pbR" firstAttribute="firstBaseline" secondItem="hWK-tb-bZk" secondAttribute="firstBaseline" id="m5Y-xa-vZ4"/>
                             <constraint firstItem="MLP-zX-pbR" firstAttribute="centerX" secondItem="iOu-gm-3zk" secondAttribute="centerX" id="mSf-ss-voY"/>
                             <constraint firstAttribute="trailing" secondItem="hWK-tb-bZk" secondAttribute="trailing" constant="102" id="oVl-TG-Tat"/>
@@ -129,6 +129,7 @@
                         <outlet property="Diameter" destination="Ghb-Ut-CVV" id="iE6-Qg-cvm"/>
                         <outlet property="Distance" destination="gsJ-4f-5nG" id="eTx-0E-RHs"/>
                         <outlet property="LengthOfDay" destination="fb2-dN-XbV" id="vDH-Km-Flf"/>
+                        <outlet property="planetImage" destination="iOu-gm-3zk" id="PJk-Hi-nme"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0j-jq-QL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -222,4 +223,7 @@
             <point key="canvasLocation" x="431" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="earth" width="348" height="348"/>
+    </resources>
 </document>

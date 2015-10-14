@@ -10,17 +10,14 @@ import UIKit
 
 class PlanetListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    //@IBOutlet weak var planetImage: UIImageView!
+    
     @IBOutlet weak var planetListTableView: UITableView!
     
-   // let imagePicker = UIImagePickerController()
-    
-    var planetNum: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //imagePicker.delegate = self
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,30 +53,33 @@ class PlanetListViewController: UIViewController, UITableViewDataSource, UITable
         
         let index = (planetListTableView.indexPathForSelectedRow?.row)! + 1
         
-        if let planetDetailVC:PlanetDetailViewController = segue.destinationViewController as? PlanetDetailViewController {
-
-            planetDetailVC.fillPlanetInfo(index)
-            
         
+        if let planetDetailVC:PlanetDetailViewController = segue.destinationViewController as?
+            
+            PlanetDetailViewController {
+
+                
+                print("The index of this planet in the array is \(index - 1)")
+                print("The name of this planet is \(PlanetController.planets[index-1].name)")
+                print("The diameter of \(PlanetController.planets[index-1].name) is \(PlanetController.planets[index-1].diameter)")
+                print("The daylength of \(PlanetController.planets[index-1].name) is \(PlanetController.planets[index-1].dayLength)")
+                print("The distance from the sun of \(PlanetController.planets[index-1].name) is \(PlanetController.planets[index-1].millionKMsFromSun) million kilometers")
+                
+                planetDetailVC.title = (PlanetController.planets[index-1].name)
+                
+                
+                planetDetailVC.myPlanetImage = UIImage(named:PlanetController.planets[index-1].imageName)
+                planetDetailVC.myDiameter = String(PlanetController.planets[index-1].diameter)
+                planetDetailVC.myDistance = String(PlanetController.planets[index-1].millionKMsFromSun)
+                planetDetailVC.myLengthOfDay = String(PlanetController.planets[index-1].dayLength)
             
         }
         
-        
-//        planetDetailVC.index = PlanetController.planets[indexPath.row]
+
         
     }
     
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//
-//        
-//        performSegueWithIdentifier("showPlanet", sender: nil)
-//        
-//        planetNum = 5
-//        
-//        print("selected \(PlanetController.planets[indexPath.row].name)")
-//        
-//        
-//   }
+
 
     
 }

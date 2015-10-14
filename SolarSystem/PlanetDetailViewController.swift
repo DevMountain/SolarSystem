@@ -16,11 +16,20 @@ class PlanetDetailViewController: UIViewController {
     
     @IBOutlet weak var LengthOfDay: UILabel!
     
+    @IBOutlet weak var planetImage: UIImageView!
+    
+    var myDiameter: String?
+    var myDistance: String?
+    var myLengthOfDay: String?
+    var myPlanetImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//       print("\(index)")
+        
+        Diameter.text = myDiameter
+        Distance.text = myDistance
+        LengthOfDay.text = myLengthOfDay
+        planetImage.image = myPlanetImage
         
         // Do any additional setup after loading the view.
     }
@@ -31,21 +40,8 @@ class PlanetDetailViewController: UIViewController {
     }
     
 
-    func fillPlanetInfo (index: Int){
-        let planet = PlanetController.planets[index-1]
-
-//        Diameter.text =
-//        Distance.text = String(planet.millionKMsFromSun)
-    
-    }
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
