@@ -61,16 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				68816A7B1BBB3591000569CE /* AppDelegate.swift */,
-				68816AB51BBB383D000569CE /* Main.storyboard */,
-				68816AB61BBB383D000569CE /* PlanetListViewController.swift */,
-				68816AB71BBB383D000569CE /* PlanetDetailViewController.swift */,
-				68816AA91BBB35E8000569CE /* PlanetController.swift */,
-				68816AAA1BBB35E8000569CE /* Planet.swift */,
-				68816A821BBB3591000569CE /* Assets.xcassets */,
-				68816A841BBB3591000569CE /* LaunchScreen.storyboard */,
-				68816A871BBB3591000569CE /* Info.plist */,
+				9D2736771D7A2BF500A3E7AF /* Model */,
+				9D2736781D7A2BF900A3E7AF /* View Controllers */,
+				9D2736761D7A2BED00A3E7AF /* Resources */,
 			);
 			path = SolarSystem;
+			sourceTree = "<group>";
+		};
+		9D2736761D7A2BED00A3E7AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68816AB51BBB383D000569CE /* Main.storyboard */,
+				68816A841BBB3591000569CE /* LaunchScreen.storyboard */,
+				68816A821BBB3591000569CE /* Assets.xcassets */,
+				68816A871BBB3591000569CE /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9D2736771D7A2BF500A3E7AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68816AA91BBB35E8000569CE /* PlanetController.swift */,
+				68816AAA1BBB35E8000569CE /* Planet.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9D2736781D7A2BF900A3E7AF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68816AB61BBB383D000569CE /* PlanetListViewController.swift */,
+				68816AB71BBB383D000569CE /* PlanetDetailViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

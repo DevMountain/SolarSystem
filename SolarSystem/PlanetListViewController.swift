@@ -10,17 +10,7 @@ import UIKit
 
 class PlanetListViewController: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
+    // MARK: - UITableViewDataSource/Delegate
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 

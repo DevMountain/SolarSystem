@@ -9,34 +9,33 @@
 import UIKit
 
 class PlanetDetailViewController: UIViewController {
-
-    @IBOutlet weak var planetImageView: UIImageView!
-    
-    @IBOutlet weak var diameterLabel: UILabel!
-    @IBOutlet weak var distanceLabel: UILabel!
-    @IBOutlet weak var lengthLabel: UILabel!
-    
-    var planet: Planet?
-    
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let planet = planet {
-            updateWithPlanet(planet)
-        }
+        updateViews()
     }
     
-    func updateWithPlanet(planet: Planet) {
+    func updateViews() {
+		guard let planet = planet where self.isViewLoaded() else { return }
+		
         title = planet.name
         planetImageView.image = UIImage(named: planet.imageName)
         diameterLabel.text = "\(planet.diameter)"
         distanceLabel.text = "\(planet.millionKMsFromSun) 10^6km"
         lengthLabel.text = "\(planet.dayLength) hours"
     }
+	
+	// MARK: Properties
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+	var planet: Planet? {
+		didSet {
+			updateViews()
+		}
+	}
+	
+	@IBOutlet weak var planetImageView: UIImageView!
+	
+	@IBOutlet weak var diameterLabel: UILabel!
+	@IBOutlet weak var distanceLabel: UILabel!
+	@IBOutlet weak var lengthLabel: UILabel!
 }
