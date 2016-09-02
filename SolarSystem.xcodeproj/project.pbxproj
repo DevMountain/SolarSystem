@@ -10,33 +10,12 @@
 		68816A7C1BBB3591000569CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A7B1BBB3591000569CE /* AppDelegate.swift */; };
 		68816A831BBB3591000569CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68816A821BBB3591000569CE /* Assets.xcassets */; };
 		68816A861BBB3591000569CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816A841BBB3591000569CE /* LaunchScreen.storyboard */; };
-		68816A911BBB3591000569CE /* SolarSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A901BBB3591000569CE /* SolarSystemTests.swift */; };
-		68816A9C1BBB3591000569CE /* SolarSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816A9B1BBB3591000569CE /* SolarSystemUITests.swift */; };
-		68816AAB1BBB35E8000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; settings = {ASSET_TAGS = (); }; };
-		68816AAC1BBB35E8000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; settings = {ASSET_TAGS = (); }; };
-		68816AAD1BBB35EC000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; settings = {ASSET_TAGS = (); }; };
-		68816AAE1BBB35EC000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; settings = {ASSET_TAGS = (); }; };
-		68816AB81BBB383D000569CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816AB51BBB383D000569CE /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		68816AB91BBB383D000569CE /* PlanetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AB61BBB383D000569CE /* PlanetListViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		68816ABA1BBB383D000569CE /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AB71BBB383D000569CE /* PlanetDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		68816AAB1BBB35E8000569CE /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AA91BBB35E8000569CE /* PlanetController.swift */; };
+		68816AAC1BBB35E8000569CE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AAA1BBB35E8000569CE /* Planet.swift */; };
+		68816AB81BBB383D000569CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816AB51BBB383D000569CE /* Main.storyboard */; };
+		68816AB91BBB383D000569CE /* PlanetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AB61BBB383D000569CE /* PlanetListViewController.swift */; };
+		68816ABA1BBB383D000569CE /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AB71BBB383D000569CE /* PlanetDetailViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		68816A8D1BBB3591000569CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 68816A701BBB3591000569CE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 68816A771BBB3591000569CE;
-			remoteInfo = SolarSystem;
-		};
-		68816A981BBB3591000569CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 68816A701BBB3591000569CE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 68816A771BBB3591000569CE;
-			remoteInfo = SolarSystem;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		68816A781BBB3591000569CE /* SolarSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,12 +23,6 @@
 		68816A821BBB3591000569CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68816A851BBB3591000569CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68816A871BBB3591000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68816A8C1BBB3591000569CE /* SolarSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68816A901BBB3591000569CE /* SolarSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTests.swift; sourceTree = "<group>"; };
-		68816A921BBB3591000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68816A971BBB3591000569CE /* SolarSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68816A9B1BBB3591000569CE /* SolarSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemUITests.swift; sourceTree = "<group>"; };
-		68816A9D1BBB3591000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68816AA91BBB35E8000569CE /* PlanetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
 		68816AAA1BBB35E8000569CE /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		68816AB51BBB383D000569CE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -65,20 +38,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68816A891BBB3591000569CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68816A941BBB3591000569CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,8 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				68816A7A1BBB3591000569CE /* SolarSystem */,
-				68816A8F1BBB3591000569CE /* SolarSystemTests */,
-				68816A9A1BBB3591000569CE /* SolarSystemUITests */,
 				68816A791BBB3591000569CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				68816A781BBB3591000569CE /* SolarSystem.app */,
-				68816A8C1BBB3591000569CE /* SolarSystemTests.xctest */,
-				68816A971BBB3591000569CE /* SolarSystemUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,24 +71,6 @@
 				68816A871BBB3591000569CE /* Info.plist */,
 			);
 			path = SolarSystem;
-			sourceTree = "<group>";
-		};
-		68816A8F1BBB3591000569CE /* SolarSystemTests */ = {
-			isa = PBXGroup;
-			children = (
-				68816A901BBB3591000569CE /* SolarSystemTests.swift */,
-				68816A921BBB3591000569CE /* Info.plist */,
-			);
-			path = SolarSystemTests;
-			sourceTree = "<group>";
-		};
-		68816A9A1BBB3591000569CE /* SolarSystemUITests */ = {
-			isa = PBXGroup;
-			children = (
-				68816A9B1BBB3591000569CE /* SolarSystemUITests.swift */,
-				68816A9D1BBB3591000569CE /* Info.plist */,
-			);
-			path = SolarSystemUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,42 +93,6 @@
 			productReference = 68816A781BBB3591000569CE /* SolarSystem.app */;
 			productType = "com.apple.product-type.application";
 		};
-		68816A8B1BBB3591000569CE /* SolarSystemTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68816AA31BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemTests" */;
-			buildPhases = (
-				68816A881BBB3591000569CE /* Sources */,
-				68816A891BBB3591000569CE /* Frameworks */,
-				68816A8A1BBB3591000569CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				68816A8E1BBB3591000569CE /* PBXTargetDependency */,
-			);
-			name = SolarSystemTests;
-			productName = SolarSystemTests;
-			productReference = 68816A8C1BBB3591000569CE /* SolarSystemTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		68816A961BBB3591000569CE /* SolarSystemUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68816AA61BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemUITests" */;
-			buildPhases = (
-				68816A931BBB3591000569CE /* Sources */,
-				68816A941BBB3591000569CE /* Frameworks */,
-				68816A951BBB3591000569CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				68816A991BBB3591000569CE /* PBXTargetDependency */,
-			);
-			name = SolarSystemUITests;
-			productName = SolarSystemUITests;
-			productReference = 68816A971BBB3591000569CE /* SolarSystemUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,14 +104,6 @@
 				TargetAttributes = {
 					68816A771BBB3591000569CE = {
 						CreatedOnToolsVersion = 7.0;
-					};
-					68816A8B1BBB3591000569CE = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 68816A771BBB3591000569CE;
-					};
-					68816A961BBB3591000569CE = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 68816A771BBB3591000569CE;
 					};
 				};
 			};
@@ -228,8 +121,6 @@
 			projectRoot = "";
 			targets = (
 				68816A771BBB3591000569CE /* SolarSystem */,
-				68816A8B1BBB3591000569CE /* SolarSystemTests */,
-				68816A961BBB3591000569CE /* SolarSystemUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,20 +133,6 @@
 				68816AB81BBB383D000569CE /* Main.storyboard in Resources */,
 				68816A861BBB3591000569CE /* LaunchScreen.storyboard in Resources */,
 				68816A831BBB3591000569CE /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68816A8A1BBB3591000569CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68816A951BBB3591000569CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,38 +151,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68816A881BBB3591000569CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68816A911BBB3591000569CE /* SolarSystemTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68816A931BBB3591000569CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68816AAE1BBB35EC000569CE /* Planet.swift in Sources */,
-				68816A9C1BBB3591000569CE /* SolarSystemUITests.swift in Sources */,
-				68816AAD1BBB35EC000569CE /* PlanetController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		68816A8E1BBB3591000569CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 68816A771BBB3591000569CE /* SolarSystem */;
-			targetProxy = 68816A8D1BBB3591000569CE /* PBXContainerItemProxy */;
-		};
-		68816A991BBB3591000569CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 68816A771BBB3591000569CE /* SolarSystem */;
-			targetProxy = 68816A981BBB3591000569CE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		68816A841BBB3591000569CE /* LaunchScreen.storyboard */ = {
@@ -424,54 +270,6 @@
 			};
 			name = Release;
 		};
-		68816AA41BBB3591000569CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SolarSystemTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystemTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarSystem.app/SolarSystem";
-			};
-			name = Debug;
-		};
-		68816AA51BBB3591000569CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SolarSystemTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystemTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarSystem.app/SolarSystem";
-			};
-			name = Release;
-		};
-		68816AA71BBB3591000569CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SolarSystemUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystemUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SolarSystem;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		68816AA81BBB3591000569CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SolarSystemUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.SolarSystemUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SolarSystem;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -489,24 +287,6 @@
 			buildConfigurations = (
 				68816AA11BBB3591000569CE /* Debug */,
 				68816AA21BBB3591000569CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68816AA31BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68816AA41BBB3591000569CE /* Debug */,
-				68816AA51BBB3591000569CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68816AA61BBB3591000569CE /* Build configuration list for PBXNativeTarget "SolarSystemUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68816AA71BBB3591000569CE /* Debug */,
-				68816AA81BBB3591000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
