@@ -16,7 +16,7 @@ class PlanetDetailViewController: UIViewController {
     }
     
     func updateViews() {
-		guard let planet = planet where self.isViewLoaded() else { return }
+		guard let planet = planet, self.isViewLoaded else { return }
 		
         title = planet.name
         planetImageView.image = UIImage(named: planet.imageName)

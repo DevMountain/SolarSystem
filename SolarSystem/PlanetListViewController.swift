@@ -12,19 +12,19 @@ class PlanetListViewController: UITableViewController {
 
     // MARK: - UITableViewDataSource/Delegate
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return PlanetController.planets.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("planetCell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "planetCell", for: indexPath)
 
         let planet = PlanetController.planets[indexPath.row]
         
         cell.textLabel?.text = planet.name
         cell.detailTextLabel?.text = "Planet \(indexPath.row + 1)"
-        cell.imageView?.contentMode = .ScaleAspectFill
+        cell.imageView?.contentMode = .scaleAspectFill
         cell.imageView?.image = UIImage(named: planet.imageName)
 
         return cell
@@ -33,12 +33,12 @@ class PlanetListViewController: UITableViewController {
     
     // MARK: - Navigation
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "toPlanetDetail" {
             
-            if let detailViewController = segue.destinationViewController as? PlanetDetailViewController,
-                let selectedIndex = self.tableView.indexPathForSelectedRow?.row {
+            if let detailViewController = segue.destination as? PlanetDetailViewController,
+                let selectedIndex = (self.tableView.indexPathForSelectedRow as NSIndexPath?)?.row {
                 
                 let planet = PlanetController.planets[selectedIndex]
                 detailViewController.planet = planet
