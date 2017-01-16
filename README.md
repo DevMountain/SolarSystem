@@ -25,7 +25,7 @@ The UITableViewController subclass template comes with a lot of boilerplate and 
 1. Add a UITableViewController as your root view controller in Main.storyboard and embed it into a UINavigationController
 2. Create a PlanetListViewController file as a subclass of UITableViewController and set the class of your root view controller scene
 3. Implement the UITableViewDataSource methods using the PlanetController.planets array
-    * note: Pay attention to your `reuseIdentifier` in the Storyboard scene and your dequeue function call
+    * note: Pay attention to your `reuseIdentifier` in the Storyboard scene and in your `dequeueReusableCell(withIdentifier:for:)` function call
 4. Set up your cells to display the name, image, and index of the planet 
     * note: Look at the included properties and various styles of a UITableViewCell
     * note: Experiment with the content modes on the cell's UIImageView to display the image in different ways
@@ -40,31 +40,30 @@ Build a view that displays the details of a planet. Display an image of the plan
 3. Add a UIImageView and UILabels to display the data
     * note: Experiment with Autolayout automatic constraints or UIStackViews to create an appealing detail view
 4. Create outlets from the UIImageView and UILabels to your `PlanetDetailViewController` class
-5. Add an optional `planet` property that will be set by the Master List View when performing the segue
-5. Add a new function called `updateWithPlanet` that takes a planet as a parameter and updates the view controller's title, UIImageView and UILabels with the planet's data
-    * note: This is an extremely common design pattern. Commit it to memory. If you have a detail view or table view cell template that displays data, use an 'updateWith' method that accepts the model data and updates the view elements with the correct data.
-6. Update the `viewDidLoad()` function to check the `planet` property, and call `updateWithPlanet` with the unwrapped value.
-    * note: This is another extremely common design pattern. When loading a new view controller, check for a model object, and update the view with the values from that model object.
+5. Add a new function called `updateViews` that checks for a planet and updates the view controller's title, UIImageView and UILabels with the planet's data
+    * note: This is an extremely common design pattern. Commit it to memory. If you have a detail view or table view cell template that displays data, use an 'update' method that checks for model data and updates the view elements with the correct data.
+6. Call the `updateViews()` function in your `viewDidLoad()`.
+7. Add an optional `planet` computed property that calls `updateViews()` whenever it gets set. This will be set by the Master List View when performing the segue
 
-You can test your view and the update function by setting the detail view as the initial view controller and calling `updateWithPlanet(PlanetController.planets[0])` in the `viewDidLoad()` function. Be sure to reverse those changes when done checking that the view works, or you may have undesired behavior as you create your segue.
+You can test your view and the `updateViews()` function by setting the detail view as the initial view controller and by setting `planet` to `PlanetController.planets[0]` in the `viewDidLoad()`. Be sure to reverse those changes when you are done checking that the view works or you may have undesired behavior when you are finished with the app.
 
 ### Segue
 
 Create a segue between your List View and Detail View that will pass the selected planet to the detail view for display.
 
-1. Option drag from your prototype cell in the List View to the Detail View to create a segue
+1. Control drag from your prototype cell in the List View to the Detail View to create a segue
 2. Select the segue and give it an identifier
     * note: As a matter of best practice, the identifier should describe what the segue does, for example `toPlanetDetail`
-3. Add the `prepareForSegue` function to your PlanetListViewController class
-    * note: Remember that `prepareForSegue` will get called on all segues triggered from the current scene and accompanying view controller class
-4. Implement the `prepareForSegue` method by checking for the correct segue identifier, capturing an instance of the selected planet, capturing an instance of the `PlanetDetailViewController`, and setting the `planet` property of the `PlanetDetailViewController`
+3. Add the `prepare(for segue: UIStoryboardSegue, sender: Any?)` function to your PlanetListViewController class
+    * note: Remember that `prepare(for segue: UIStoryboardSegue, sender: Any?)` will get called on all segues triggered from the current scene and accompanying view controller class
+4. Implement the `prepare(for segue: UIStoryboardSegue, sender: Any?)` method by checking for the correct segue identifier, capturing an instance of the `PlanetDetailViewController`, capturing an instance of the selected planet, and setting the `planet` property of the `PlanetDetailViewController`
     * note: Look at UITableView documentation to find a way to capture the indexPath of the selected row
     * note: Remember, the `PlanetDetailViewController` will use the `planet` property to update itself when it loads to display to the user
 
 ### Black Diamonds
 
 * Add additional model data to the Planet class, update the PlanetController to include it, and update the PlanetDetailViewController to display it
-* Add an image of the entire Solar System as a header view to the list UITableView
+* Add an image of the entire Solar System as a header view to the Planet List Table View
 * Create a Unit or UITest that verifies the number of cells in the PlanetListViewController
 * Create a Unit or UITest that verifies the values of PlanetController.planets
 
