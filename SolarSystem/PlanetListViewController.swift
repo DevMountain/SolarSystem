@@ -38,7 +38,7 @@ class PlanetListViewController: UITableViewController {
         if segue.identifier == "toPlanetDetail" {
             
             if let detailViewController = segue.destination as? PlanetDetailViewController,
-                let selectedIndex = tableView.indexPathForSelectedRow?.row {
+                let selectedIndex = (self.tableView.indexPathForSelectedRow as NSIndexPath?)?.row {
                 
                 let planet = PlanetController.planets[selectedIndex]
                 detailViewController.planet = planet
