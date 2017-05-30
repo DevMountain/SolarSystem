@@ -41,12 +41,11 @@ Build a view that displays the details of a planet. Display an image of the plan
     * note: Experiment with Autolayout automatic constraints or UIStackViews to create an appealing detail view
 4. Create outlets from the UIImageView and UILabels to your `PlanetDetailViewController` class
 5. Add an optional `planet` property that will be set by the Master List View when performing the segue
-5. Add a new function called `updateWithPlanet` that takes a planet as a parameter and updates the view controller's title, UIImageView and UILabels with the planet's data
-    * note: This is an extremely common design pattern. Commit it to memory. If you have a detail view or table view cell template that displays data, use an 'updateWith' method that accepts the model data and updates the view elements with the correct data.
-6. Update the `viewDidLoad()` function to check the `planet` property, and call `updateWithPlanet` with the unwrapped value.
-    * note: This is another extremely common design pattern. When loading a new view controller, check for a model object, and update the view with the values from that model object.
+6. Add a new function called `updateViews` that makes sure a planet was successfully passed to the `PlanetDetailViewController`'s planet property made in step 5 by unwrapping it, then updates the view controller's title, UIImageView and UILabels with the planet's data
+    * note: This is an extremely common design pattern. Commit it to memory. If you have a detail view or table view cell template that displays data, use an 'updateViews' method takes the model data passed from the previous view controller's `prepareForSegue` function, and updates the view's subviews with it.
+7. Update the `viewDidLoad()` function to call the `updateViews` function.
 
-You can test your view and the update function by setting the detail view as the initial view controller and calling `updateWithPlanet(PlanetController.planets[0])` in the `viewDidLoad()` function. Be sure to reverse those changes when done checking that the view works, or you may have undesired behavior as you create your segue.
+You can test your view and the update function by setting the detail view as the initial view controller, then in the `viewDidLoad`, assign `self.planet` to `PlanetController.planets[0]`, before calling `updateViews` Be sure to reverse those changes when done checking that the view works, or you may have undesired behavior as you create your segue, though make sure to leave the `updateViews` function in the `viewDidLoad`.
 
 ### Segue
 
