@@ -21,8 +21,8 @@ Students who complete this project independently are able to:
 Build a view that lists the planets using a `UITableViewController` scene. Implement the `UITableViewDataSource` protocol methods (refer to the documentation for a refresher if needed). Note than one could use a `UIViewController` with a `UITableView` placed on it, but `UITableViewController` implements a full screen `UITableView` by default, and comes with other benefits discussed in the lesson.
 
 ### ScreenShots
-![x](https://user-images.githubusercontent.com/23179585/46303156-4f269780-c568-11e8-9981-7538008a630d.png)
-![screen1 copy](https://user-images.githubusercontent.com/23179585/46303148-4b931080-c568-11e8-9387-c0a601688eae.png)
+![x](https://user-images.githubusercontent.com/23179585/46303302-b6444c00-c568-11e8-81fb-96945036b56f.png)![earth](https://user-images.githubusercontent.com/23179585/46303305-b80e0f80-c568-11e8-81ab-ef5723305381.png)
+
 
 
 <details>
