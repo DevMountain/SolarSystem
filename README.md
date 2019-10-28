@@ -14,6 +14,8 @@ Students who complete this project independently are able to:
 
 ## Guide
 
+Create your project, after selecting single view application make sure that you choose the User Interface Storyboard and not SwiftUI. If you create your project after selecting SwiftUI, you will need to delete your project and try again. 
+
 ## Model
 
 Create your Planet Model class that will hold the Name, ImageName, Diameter, Day-length, and MaxMillionKMsFromSun.
