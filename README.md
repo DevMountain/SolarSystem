@@ -14,7 +14,7 @@ Students who complete this project independently can:
 
 ## Guide
 
-When you create your project, select the single view application, make sure that you choose the User Interface Storyboard and not SwiftUI. If you create your project after selecting SwiftUI, you will need to delete your project and try again. 
+When you create your project, select the single view application, make sure that you choose the user Interface Storyboard and not SwiftUI. If you create your project after selecting SwiftUI, you will need to delete your project and try again. 
 
 ## Model
 
